@@ -1,0 +1,210 @@
+-- Gui to Lua
+-- Version: 3.2
+
+-- Instances:
+
+local ScreenGui = Instance.new("ScreenGui")
+local main = Instance.new("Frame")
+local TextLabel = Instance.new("TextLabel")
+local close = Instance.new("TextButton")
+local ScrollingFrame = Instance.new("ScrollingFrame")
+local Keystrokes = Instance.new("TextButton")
+local Fullbright = Instance.new("TextButton")
+local Rejoin = Instance.new("TextButton")
+local Spy = Instance.new("ImageButton")
+
+--Properties:
+
+ScreenGui.Parent = game.CoreGui
+ScreenGui.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+
+main.Name = "main"
+main.Parent = ScreenGui
+main.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+main.Position = UDim2.new(0.328632504, 0, 0.15506959, 0)
+main.Size = UDim2.new(0, 295, 0, 295)
+
+TextLabel.Parent = main
+TextLabel.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel.Position = UDim2.new(0.169491529, 0, 0, 0)
+TextLabel.Size = UDim2.new(0, 244, 0, 50)
+TextLabel.Font = Enum.Font.SciFi
+TextLabel.Text = "TranZit Mod GUI"
+TextLabel.TextColor3 = Color3.fromRGB(170, 0, 0)
+TextLabel.TextSize = 36.000
+
+close.Name = "close"
+close.Parent = main
+close.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+close.Size = UDim2.new(0, 50, 0, 50)
+close.Font = Enum.Font.SciFi
+close.Text = "X"
+close.TextColor3 = Color3.fromRGB(170, 0, 0)
+close.TextSize = 50.000
+
+ScrollingFrame.Parent = main
+ScrollingFrame.Active = true
+ScrollingFrame.BackgroundColor3 = Color3.fromRGB(173, 173, 173)
+ScrollingFrame.Position = UDim2.new(0.00288261799, 0, 0.166337565, 0)
+ScrollingFrame.Size = UDim2.new(0, 293, 0, 245)
+
+Keystrokes.Name = "Keystrokes"
+Keystrokes.Parent = ScrollingFrame
+Keystrokes.BackgroundColor3 = Color3.fromRGB(173, 173, 173)
+Keystrokes.BorderSizePixel = 0
+Keystrokes.Position = UDim2.new(0.55290103, 0, 0.200276718, 0)
+Keystrokes.Size = UDim2.new(0, 100, 0, 50)
+Keystrokes.Font = Enum.Font.SciFi
+Keystrokes.Text = "Key strokes"
+Keystrokes.TextColor3 = Color3.fromRGB(0, 0, 0)
+Keystrokes.TextSize = 21.000
+
+Fullbright.Name = "Fullbright"
+Fullbright.Parent = ScrollingFrame
+Fullbright.BackgroundColor3 = Color3.fromRGB(173, 173, 173)
+Fullbright.BorderSizePixel = 0
+Fullbright.Position = UDim2.new(0.0955631435, 0, 0.200276718, 0)
+Fullbright.Size = UDim2.new(0, 100, 0, 50)
+Fullbright.Font = Enum.Font.SciFi
+Fullbright.Text = "Full bright"
+Fullbright.TextColor3 = Color3.fromRGB(0, 0, 0)
+Fullbright.TextSize = 21.000
+
+Rejoin.Name = "Rejoin"
+Rejoin.Parent = ScrollingFrame
+Rejoin.BackgroundColor3 = Color3.fromRGB(173, 173, 173)
+Rejoin.BorderSizePixel = 0
+Rejoin.Position = UDim2.new(0.55290103, 0, 0.0477343462, 0)
+Rejoin.Size = UDim2.new(0, 100, 0, 50)
+Rejoin.Font = Enum.Font.SciFi
+Rejoin.Text = "Rejoin server"
+Rejoin.TextColor3 = Color3.fromRGB(0, 0, 0)
+Rejoin.TextSize = 17.000
+
+Spy.Name = "Spy"
+Spy.Parent = ScrollingFrame
+Spy.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Spy.BorderSizePixel = 0
+Spy.Position = UDim2.new(0.0952623338, 0, 0.0474576354, 0)
+Spy.Size = UDim2.new(0, 100, 0, 50)
+Spy.Image = "http://www.roblox.com/asset/?id=8493630431"
+
+-- Scripts:
+
+local function LGNECDY_fake_script() -- close.LocalScript 
+	local script = Instance.new('LocalScript', close)
+
+	close.MouseButton1Down:connect(function()
+		main.Visible = false
+		openmain.visible = true
+	end)
+end
+coroutine.wrap(LGNECDY_fake_script)()
+local function ZIDIE_fake_script() -- Keystrokes.LocalScript 
+	local script = Instance.new('LocalScript', Keystrokes)
+
+	Keystrokes.MouseButton1Down:connect(function()
+		loadstring(game:HttpGet(('https://raw.githubusercontent.com/darzisme/justhax/main/keystrokes.lua'),true))()
+	end)
+end
+coroutine.wrap(ZIDIE_fake_script)()
+local function WCZFII_fake_script() -- Fullbright.LocalScript 
+	local script = Instance.new('LocalScript', Fullbright)
+
+	Fullbright.MouseButton1Down:connect(function()
+		loadstring(game:HttpGet("https://pastebin.com/raw/06iG6YkU", true))()
+	end)
+end
+coroutine.wrap(WCZFII_fake_script)()
+local function WCVDI_fake_script() -- Rejoin.LocalScript 
+	local script = Instance.new('LocalScript', Rejoin)
+
+	Rejoin.MouseButton1Down:connect(function()
+		local ts = game:GetService("TeleportService")
+	
+		local p = game:GetService("Players").LocalPlayer
+	
+	
+	
+		ts:Teleport(game.PlaceId, p)
+	end)
+end
+coroutine.wrap(WCVDI_fake_script)()
+local function GFDN_fake_script() -- Spy.LocalScript 
+	local script = Instance.new('LocalScript', Spy)
+
+	Spy.MouseButton1Down:connect(function()
+		--This script reveals ALL hidden messages in the default chat
+	
+		enabled = true --chat "/spy" to toggle!
+		spyOnMyself = true --if true will check your messages too
+		public = false --if true will chat the logs publicly (fun, risky)
+		publicItalics = true --if true will use /me to stand out
+		privateProperties = { --customize private logs
+			Color = Color3.fromRGB(0,255,255); 
+			Font = Enum.Font.SourceSansBold;
+			TextSize = 18;
+		}
+	
+	
+		local StarterGui = game:GetService("StarterGui")
+		local Players = game:GetService("Players")
+		local player = Players.LocalPlayer or Players:GetPropertyChangedSignal("LocalPlayer"):Wait() or Players.LocalPlayer
+		local saymsg = game:GetService("ReplicatedStorage"):WaitForChild("DefaultChatSystemChatEvents"):WaitForChild("SayMessageRequest")
+		local getmsg = game:GetService("ReplicatedStorage"):WaitForChild("DefaultChatSystemChatEvents"):WaitForChild("OnMessageDoneFiltering")
+		local instance = (_G.chatSpyInstance or 0) + 1
+		_G.chatSpyInstance = instance
+	
+		local function onChatted(p,msg)
+			if _G.chatSpyInstance == instance then
+				if p==player and msg:lower():sub(1,4)=="/spy" then
+					enabled = not enabled
+					wait(0.3)
+					privateProperties.Text = "{SPY "..(enabled and "EN" or "DIS").."ABLED}"
+					StarterGui:SetCore("ChatMakeSystemMessage",privateProperties)
+				elseif enabled and (spyOnMyself==true or p~=player) then
+					msg = msg:gsub("[\n\r]",''):gsub("\t",' '):gsub("[ ]+",' ')
+					local hidden = true
+					local conn = getmsg.OnClientEvent:Connect(function(packet,channel)
+						if packet.SpeakerUserId==p.UserId and packet.Message==msg:sub(#msg-#packet.Message+1) and (channel=="All" or (channel=="Team" and public==false and Players[packet.FromSpeaker].Team==player.Team)) then
+							hidden = false
+						end
+					end)
+					wait(1)
+					conn:Disconnect()
+					if hidden and enabled then
+						if public then
+							saymsg:FireServer((publicItalics and "/me " or '').."{SPY} [".. p.Name .."]: "..msg,"All")
+						else
+							privateProperties.Text = "{SPY} [".. p.Name .."]: "..msg
+							StarterGui:SetCore("ChatMakeSystemMessage",privateProperties)
+						end
+					end
+				end
+			end
+		end
+	
+		for _,p in ipairs(Players:GetPlayers()) do
+			p.Chatted:Connect(function(msg) onChatted(p,msg) end)
+		end
+		Players.PlayerAdded:Connect(function(p)
+			p.Chatted:Connect(function(msg) onChatted(p,msg) end)
+		end)
+		privateProperties.Text = "{SPY "..(enabled and "EN" or "DIS").."ABLED}"
+		StarterGui:SetCore("ChatMakeSystemMessage",privateProperties)
+		if not player.PlayerGui:FindFirstChild("Chat") then wait(3) end
+		local chatFrame = player.PlayerGui.Chat.Frame
+		chatFrame.ChatChannelParentFrame.Visible = true
+		chatFrame.ChatBarParentFrame.Position = chatFrame.ChatChannelParentFrame.Position+UDim2.new(UDim.new(),chatFrame.ChatChannelParentFrame.Size.Y)
+	end)
+end
+coroutine.wrap(GFDN_fake_script)()
+local function UYZVB_fake_script() -- ScreenGui.Script 
+	local script = Instance.new('Script', ScreenGui)
+
+	frame = script.Parent.main -- Take out {}s, and put name of frame
+	frame.Draggable = true
+	frame.Active = true
+	frame.Selectable = true
+end
+coroutine.wrap(UYZVB_fake_script)()

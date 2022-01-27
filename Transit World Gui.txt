@@ -1,0 +1,241 @@
+-- Gui to Lua
+-- Version: 3.2
+
+-- Instances:
+
+local ScreenGui = Instance.new("ScreenGui")
+local main = Instance.new("Frame")
+local TextLabel = Instance.new("TextLabel")
+local close = Instance.new("TextButton")
+local ScrollingFrame = Instance.new("ScrollingFrame")
+local Wood = Instance.new("ImageButton")
+local bob = Instance.new("ImageButton")
+local Cars = Instance.new("ImageButton")
+local Fancy = Instance.new("ImageButton")
+local Painting = Instance.new("ImageButton")
+local Land = Instance.new("ImageButton")
+local Link = Instance.new("ImageButton")
+local Spawn = Instance.new("ImageButton")
+local win = Instance.new("TextButton")
+local base = Instance.new("TextButton")
+
+--Properties:
+
+ScreenGui.Parent = game.CoreGui
+ScreenGui.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+
+main.Name = "main"
+main.Parent = ScreenGui
+main.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+main.Position = UDim2.new(0.328632504, 0, 0.15506959, 0)
+main.Size = UDim2.new(0, 295, 0, 295)
+
+TextLabel.Parent = main
+TextLabel.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel.Position = UDim2.new(0.169491529, 0, 0, 0)
+TextLabel.Size = UDim2.new(0, 244, 0, 50)
+TextLabel.Font = Enum.Font.SciFi
+TextLabel.Text = "Transit World GUI"
+TextLabel.TextColor3 = Color3.fromRGB(170, 0, 0)
+TextLabel.TextSize = 35.000
+
+close.Name = "close"
+close.Parent = main
+close.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+close.Size = UDim2.new(0, 50, 0, 50)
+close.Font = Enum.Font.SciFi
+close.Text = "X"
+close.TextColor3 = Color3.fromRGB(170, 0, 0)
+close.TextSize = 50.000
+
+ScrollingFrame.Parent = main
+ScrollingFrame.Active = true
+ScrollingFrame.BackgroundColor3 = Color3.fromRGB(173, 173, 173)
+ScrollingFrame.Position = UDim2.new(0.00338983047, 0, 0.17288135, 0)
+ScrollingFrame.Size = UDim2.new(0, 293, 0, 244)
+
+Wood.Name = "Wood"
+Wood.Parent = ScrollingFrame
+Wood.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Wood.Position = UDim2.new(0.0643605292, 0, 0.0275281221, 0)
+Wood.Size = UDim2.new(0, 67, 0, 65)
+Wood.Image = "http://www.roblox.com/asset/?id=8492395941"
+
+bob.Name = "bob"
+bob.Parent = ScrollingFrame
+bob.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+bob.Position = UDim2.new(0.0643605292, 0, 0.288545072, 0)
+bob.Size = UDim2.new(0, 67, 0, 65)
+bob.Image = "http://www.roblox.com/asset/?id=8492391408"
+
+Cars.Name = "Cars"
+Cars.Parent = ScrollingFrame
+Cars.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Cars.Position = UDim2.new(0.685520887, 0, 0.151256934, 0)
+Cars.Size = UDim2.new(0, 67, 0, 65)
+Cars.Image = "http://www.roblox.com/asset/?id=8492392038"
+
+Fancy.Name = "Fancy"
+Fancy.Parent = ScrollingFrame
+Fancy.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Fancy.Position = UDim2.new(0.385179639, 0, 0.151256934, 0)
+Fancy.Size = UDim2.new(0, 67, 0, 65)
+Fancy.Image = "http://www.roblox.com/asset/?id=8492392657"
+
+Painting.Name = "Painting"
+Painting.Parent = ScrollingFrame
+Painting.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Painting.Position = UDim2.new(0.0643605292, 0, 0.151256934, 0)
+Painting.Size = UDim2.new(0, 67, 0, 65)
+Painting.Image = "http://www.roblox.com/asset/?id=8492393497"
+
+Land.Name = "Land"
+Land.Parent = ScrollingFrame
+Land.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Land.Position = UDim2.new(0.688933849, 0, 0.0275281221, 0)
+Land.Size = UDim2.new(0, 67, 0, 65)
+Land.Image = "http://www.roblox.com/asset/?id=8492394300"
+
+Link.Name = "Link"
+Link.Parent = ScrollingFrame
+Link.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Link.Position = UDim2.new(0.381766677, 0, 0.0275281221, 0)
+Link.Size = UDim2.new(0, 67, 0, 65)
+Link.Image = "http://www.roblox.com/asset/?id=8492395043"
+
+Spawn.Name = "Spawn"
+Spawn.Parent = ScrollingFrame
+Spawn.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Spawn.Position = UDim2.new(0.385179639, 0, 0.288545072, 0)
+Spawn.Size = UDim2.new(0, 67, 0, 65)
+Spawn.Image = "http://www.roblox.com/asset/?id=8492572356"
+
+win.Name = "win"
+win.Parent = ScrollingFrame
+win.BackgroundColor3 = Color3.fromRGB(173, 173, 173)
+win.BorderSizePixel = 0
+win.Position = UDim2.new(0.685185432, 0, 0.287259579, 0)
+win.Size = UDim2.new(0, 67, 0, 65)
+win.Font = Enum.Font.SciFi
+win.Text = "volcano win"
+win.TextColor3 = Color3.fromRGB(0, 0, 0)
+win.TextSize = 17.000
+
+base.Name = "base"
+base.Parent = ScrollingFrame
+base.BackgroundColor3 = Color3.fromRGB(173, 173, 173)
+base.BorderSizePixel = 0
+base.Position = UDim2.new(0.381431162, 0, 0.431327373, 0)
+base.Size = UDim2.new(0, 67, 0, 65)
+base.Font = Enum.Font.SciFi
+base.Text = "Base"
+base.TextColor3 = Color3.fromRGB(0, 0, 0)
+base.TextSize = 26.000
+
+-- Scripts:
+
+local function RPQJWN_fake_script() -- close.LocalScript 
+	local script = Instance.new('LocalScript', close)
+
+	close.MouseButton1Down:connect(function()
+		main.Visible = false
+		openmain.visible = true
+	end)
+end
+coroutine.wrap(RPQJWN_fake_script)()
+local function YDPWP_fake_script() -- Wood.LocalScript 
+	local script = Instance.new('LocalScript', Wood)
+
+	Wood.MouseButton1Down:connect(function()
+		game.Players.LocalPlayer.Character:MoveTo(Vector3.new(265,3,57))
+	end)
+end
+coroutine.wrap(YDPWP_fake_script)()
+local function LZPN_fake_script() -- bob.LocalScript 
+	local script = Instance.new('LocalScript', bob)
+
+	bob.MouseButton1Down:connect(function()
+		game.Players.LocalPlayer.Character:MoveTo(Vector3.new(260, 8, -2542))
+	end)
+end
+coroutine.wrap(LZPN_fake_script)()
+local function GLZU_fake_script() -- Cars.LocalScript 
+	local script = Instance.new('LocalScript', Cars)
+
+	Cars.MouseButton1Down:connect(function()
+		game.Players.LocalPlayer.Character:MoveTo(Vector3.new(509, 3, -1463))
+	end)
+end
+coroutine.wrap(GLZU_fake_script)()
+local function PMQSPWJ_fake_script() -- Fancy.LocalScript 
+	local script = Instance.new('LocalScript', Fancy)
+
+	Fancy.MouseButton1Down:connect(function()
+		game.Players.LocalPlayer.Character:MoveTo(Vector3.new(491, 13, -1720))
+	end)
+end
+coroutine.wrap(PMQSPWJ_fake_script)()
+local function FAKKY_fake_script() -- Painting.LocalScript 
+	local script = Instance.new('LocalScript', Painting)
+ 
+	Painting.MouseButton1Down:connect(function()
+		game.Players.LocalPlayer.Character:MoveTo(Vector3.new(5207, -166, 719))
+	end)
+end
+coroutine.wrap(FAKKY_fake_script)()
+local function ZROUX_fake_script() -- Land.LocalScript 
+	local script = Instance.new('LocalScript', Land)
+
+	Land.MouseButton1Down:connect(function()
+		game.Players.LocalPlayer.Character:MoveTo(Vector3.new(258, 5, -99))
+	end)
+end
+coroutine.wrap(ZROUX_fake_script)()
+local function MFKVO_fake_script() -- Link.LocalScript 
+	local script = Instance.new('LocalScript', Link)
+
+	Link.MouseButton1Down:connect(function()
+		game.Players.LocalPlayer.Character:MoveTo(Vector3.new(4607,7.5,-798))
+	end)
+end
+coroutine.wrap(MFKVO_fake_script)()
+local function GMOB_fake_script() -- Spawn.LocalScript 
+	local script = Instance.new('LocalScript', Main)
+
+	Spawn.MouseButton1Down:connect(function()
+		game.Players.LocalPlayer.Character:MoveTo(Vector3.new(155,3,74))
+	end)
+end
+coroutine.wrap(GMOB_fake_script)()
+local function TJMHQT_fake_script() -- win.LocalScript 
+	local script = Instance.new('LocalScript', win)
+
+	win.MouseButton1Down:connect(function()
+		game.Players.LocalPlayer.Character:MoveTo(Vector3.new(-1668.047, 351.38, 1475.389))
+		wait(1)
+		game.Players.LocalPlayer.Character:MoveTo(Vector3.new(155,3,74))
+	end)
+end
+coroutine.wrap(TJMHQT_fake_script)()
+local function YEPS_fake_script() -- base.LocalScript 
+	local script = Instance.new('LocalScript', base)
+
+	base.MouseButton1Down:connect(function()
+		for i, v in pairs(game.Workspace.Properties:GetChildren()) do
+			if v.Owner.Value == game.Players.LocalPlayer then
+				local p= CFrame.new(v.OriginSquare.CFrame.x, v.OriginSquare.CFrame.y +3.5, v.OriginSquare.CFrame.z)
+				game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = p
+			end
+		end
+	end)
+end
+coroutine.wrap(YEPS_fake_script)()
+local function GHSYCP_fake_script() -- ScreenGui.Script 
+	local script = Instance.new('Script', ScreenGui)
+
+	frame = script.Parent.main -- Take out {}s, and put name of frame
+	frame.Draggable = true
+	frame.Active = true
+	frame.Selectable = true
+end
+coroutine.wrap(GHSYCP_fake_script)()
