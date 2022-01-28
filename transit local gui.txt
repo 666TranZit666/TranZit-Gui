@@ -404,7 +404,7 @@ local function UJAAGTG_fake_script() -- BridgeD.LocalScript
 
 	BridgeD.MouseButton1Click:connect(function()
 		game.workspace.Bridge.VerticalLiftBridge.Lift.PrimaryPart = game.workspace.Bridge.VerticalLiftBridge.Lift.Base
-		game.workspace.Bridge.VerticalLiftBridge.Lift:SetPrimaryPartCFrame(CFrame.new(113.6, -19.5, -883))
+		game.workspace.Bridge.VerticalLiftBridge.Lift:SetPrimaryPartCFrame(CFrame.new(113.6, -6.5, -883))
 		BridgeD.Visible = false
 		BridgeU.Visible = true
 	end)
@@ -415,7 +415,7 @@ local function GWTV_fake_script() -- BridgeU.LocalScript
 
 	BridgeU.MouseButton1Click:connect(function()
 		game.workspace.Bridge.VerticalLiftBridge.Lift.PrimaryPart = game.workspace.Bridge.VerticalLiftBridge.Lift.Base
-		game.workspace.Bridge.VerticalLiftBridge.Lift:SetPrimaryPartCFrame(CFrame.new(113.6, 6.5, -883))
+		game.workspace.Bridge.VerticalLiftBridge.Lift:SetPrimaryPartCFrame(CFrame.new(113.6, 33, -883))
 		BridgeD.Visible = true
 		BridgeU.Visible = false
 	end)
