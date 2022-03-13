@@ -1,15 +1,21 @@
 # TranZit GUI update
 
+Version 2.1
+
 added base tp
 
 fixed bring tree
 
-# Upcoming TranZit GUI update
+Version 2.2
 
-Land mark tp
+a few land mark tp
+
+anti afk
 
 full bright
 
-anti black list
+Anti blacklist
+
+# Upcoming TranZit GUI update
 
 keystrokes
