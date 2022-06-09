@@ -119,8 +119,8 @@ local ghostbin = "https://raw.githubusercontent.com/666TranZit666/TranZit-Gui/ma
 
 	if string.find(webkeys,userkey) then
 
-		LocalBuildingButton.Visible = true
-		KeySys.Visible = false -- PUT YOUR SCRIPT HERE! 
+		game.Players.LocalPlayer:WaitForChild("PlayerGui").TranZit.Main.LeftFrame.TabHolder.LocalBuildingButton.Visible = true
+		game.Players.LocalPlayer:WaitForChild("PlayerGui").TranZit.Main.LeftFrame.TabHolder.KeySys.Visible = false
 		print("Whitelist accepted!")
 
 	else
