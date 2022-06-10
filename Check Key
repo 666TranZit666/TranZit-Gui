@@ -119,8 +119,7 @@ local ghostbin = "https://raw.githubusercontent.com/666TranZit666/TranZit-Gui/ma
 
 	if string.find(webkeys,userkey) then
 
-		game.Players.LocalPlayer:WaitForChild("PlayerGui").TranZit.Main.LeftFrame.TabHolder.LocalBuildingButton.Visible = true
-		game.Players.LocalPlayer:WaitForChild("PlayerGui").TranZit.Main.LeftFrame.TabHolder.KeySys.Visible = false
+		loadstring(game:HttpGet("https://raw.githubusercontent.com/666TranZit666/TranZit-Gui/main/config.json"))("IVE CONTRACTED AIDS")
 		print("Whitelist accepted!")
 
 	else
