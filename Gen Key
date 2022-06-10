@@ -167,7 +167,8 @@
 		})
 		game:GetService("StarterGui"):SetCore("SendNotification", {
 			Title = "Discord";
-			Text = "Discord.gg/YCSKnMxDGH"
+			Text = "Check f9 or /console for the discord link"
+			print 'Discord.gg/YCSKnMxDGH'
 		})
 
 		wait(5)
