@@ -165,6 +165,10 @@
 			Title = "Key";
 			Text = "Send In discord for a whitelist"
 		})
+		game:GetService("StarterGui"):SetCore("SendNotification", {
+			Title = "Discord";
+			Text = "Discord.gg/YCSKnMxDGH"
+		})
 
 		wait(5)
 
