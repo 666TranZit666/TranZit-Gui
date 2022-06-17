@@ -161,16 +161,6 @@
 			Text = "Key Copied"
 		})
 
-		game:GetService("StarterGui"):SetCore("SendNotification", {
-			Title = "Key";
-			Text = "Send In discord for a whitelist"
-		})
-		game:GetService("StarterGui"):SetCore("SendNotification", {
-			Title = "Discord";
-			Text = "Check f9 or /console for the discord link"
-			print 'Discord.gg/YCSKnMxDGH'
-		})
-
 		wait(5)
 
 		game.Players.LocalPlayer.PlayerGui.Chat.Hasher:Destroy()
