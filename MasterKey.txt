@@ -1,8 +1,11 @@
-9d9b373395cb7f36b3245f75beb607904f7ffc363ed9b5b66b98ea2d22ebccd9 --Mr_Doggy#5067 black listed for leaving after whitelisted 
+9d9b373395cb7f36b3245f75beb607904f7ffc363ed9b5b66b98ea2d22ebccd9 --Mr_Doggy#5067 blacklisted for leaving after whitelisted 
 
 
-d968ed91ac3624f08e96e4da1d01722f807935d1adecfee409a865d70cca1b52 --《■○°Rob°●□》#4360 black listed for leaving after whitelisted
+d968ed91ac3624f08e96e4da1d01722f807935d1adecfee409a865d70cca1b52 --《■○°Rob°●□》#4360 blacklisted for leaving after whitelisted
 
 
 
-4fec7f9ecba0bad557d3482fe02dc02c2f08a4d834322b88610eec5cf376444d --An1mk0#2250 black listed for leaving after whitelisted
+4fec7f9ecba0bad557d3482fe02dc02c2f08a4d834322b88610eec5cf376444d --An1mk0#2250 blacklisted for leaving after whitelisted
+
+
+a2867df94f6f70e33e1cf6f3a529863fb378f09493baac3224b8e6b046dff586 --Ghust!#9883 blacklisted for leaving after whitelisted
