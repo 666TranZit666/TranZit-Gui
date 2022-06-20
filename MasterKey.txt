@@ -5,15 +5,8 @@ d968ed91ac3624f08e96e4da1d01722f807935d1adecfee409a865d70cca1b52 --《■○°Ro
 
 
 
-<<<<<<< HEAD
 4fec7f9ecba0bad557d3482fe02dc02c2f08a4d834322b88610eec5cf376444d --An1mk0#2250 black listed for leaving after whitelisted
 
 
 
 a2867df94f6f70e33e1cf6f3a529863fb378f09493baac3224b8e6b046dff586 --Ghust!#9883 black listed for leaving after whitelisted
-=======
-4fec7f9ecba0bad557d3482fe02dc02c2f08a4d834322b88610eec5cf376444d --An1mk0#2250 blacklisted for leaving after whitelisted
-
-
-a2867df94f6f70e33e1cf6f3a529863fb378f09493baac3224b8e6b046dff586 --Ghust!#9883 blacklisted for leaving after whitelisted
->>>>>>> main
