@@ -16,7 +16,7 @@ d408777b4662f5b1d383b964f7f1e8d93dae8658d894952e9d8371e2575773eb --ItsJohnny#264
 
 
 
-c81de7200663495880ec4bd86ba89c47d8ee9a599b8dfa78711f20e99559c8fc --KadiS#8498 blacklisted fir leaving after whitelisted
+c81de7200663495880ec4bd86ba89c47d8ee9a599b8dfa78711f20e99559c8fc --KadiS#8498 blacklisted for leaving after whitelisted
 
 
 
