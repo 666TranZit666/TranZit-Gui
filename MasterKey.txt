@@ -31,4 +31,12 @@ c6db2217873bf08f726978756fe6248e3f1b2adefd40f39dcb5974b4739d39a1 --ieblan#7117 b
 2c92a02de7e868e6a1cbe290d6aa86adf5c1de8c3292241b9fcd2a1ee03b7408 --.evaworciM#7015 blacklisted for leaving
 
 
-5c7f714c4624a7c66c8cba1516c98c30dda6246cee24f0f43ab01373ff7e76d3 --Oosel#0700 blacklisted for leaveing
+5c7f714c4624a7c66c8cba1516c98c30dda6246cee24f0f43ab01373ff7e76d3 --Oosel#0700 blacklisted for  leaving
+
+
+3d4580c236536779e32fa83c51593007772dcb2ee076634489ba235b765feaf1 --Eren123#7275 blacklisted for leaving
+
+
+6d30f09db3cbb75599cf2a2869b219638788ee4cfc01460c58b9787098bd2739 --kai481#9027 blacklisted for leaving
+
+
