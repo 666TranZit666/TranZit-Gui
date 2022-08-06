@@ -1,0 +1,82 @@
+local lib = loadstring(game:HttpGet"https://raw.githubusercontent.com/dawid-scripts/UI-Libs/main/Vape.txt")()
+loadstring(game:HttpGet"https://raw.githubusercontent.com/666TranZit666/Misc-GUI/main/testing")()
+local win = lib:Window("TranZit Gui",Color3.fromRGB(44, 120, 224), Enum.KeyCode.RightControl)
+
+local tab = win:Tab("TranZit")
+
+tab:Button("Scripter", function()
+lib:Notification("Scripter", "scripted by lazarbeast55", "close")
+end)
+
+tab:Button("Ui Lib", function()
+lib:Notification("Ui lib", "Ui by dawid", "close")
+end)
+
+local tab = win:Tab("Local")
+
+
+tab:Button("Inf Jump", function()
+local Player = game:GetService'Players'.LocalPlayer;
+local UIS = game:GetService'UserInputService';
+
+_G.JumpHeight = 50;
+
+function Action(Object, Function) if Object ~= nil then Function(Object); end end
+
+UIS.InputBegan:connect(function(UserInput)
+    if UserInput.UserInputType == Enum.UserInputType.Keyboard and UserInput.KeyCode == Enum.KeyCode.Space then
+        Action(Player.Character.Humanoid, function(self)
+            if self:GetState() == Enum.HumanoidStateType.Jumping or self:GetState() == Enum.HumanoidStateType.Freefall then
+                Action(self.Parent.HumanoidRootPart, function(self)
+                    self.Velocity = Vector3.new(0, _G.JumpHeight, 0);
+                end)
+            end
+        end)
+    end
+end)
+end)
+
+tab:Slider("WalkSpeed",0,100,30, function(t)
+game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = t
+end)
+
+tab:Slider("Hip Height",0,100,30, function(t)
+game.Players.LocalPlayer.Character.Humanoid.HipHeight = t
+end)
+
+tab:Button("Walk reset", function()
+game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = 16
+end)
+
+tab:Button("Hip reset", function()
+game.Players.LocalPlayer.Character.Humanoid.HipHeight = 2
+end)
+
+local main = win:Tab("Main")
+
+
+main:Button("ESP", function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Macintosh1983/mm2autoesp/main/mainESP.lua"))()
+end)
+
+main:Button("Coin tp", function()
+while true do
+wait()
+local children = game.Workspace:GetChildren()
+for _, child in pairs(children) do
+    for _, child in pairs(child:GetChildren()) do
+        table.insert(children, child)
+    end
+
+    if child:IsA("BasePart") and child.Name == "Coin" then
+            child.CFrame = game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame
+        end
+    end
+end
+end)
+
+local changeclr = win:Tab("Settings")
+
+changeclr:Colorpicker("Change UI Color",Color3.fromRGB(44, 120, 224), function(t)
+lib:ChangePresetColor(Color3.fromRGB(t.R * 255, t.G * 255, t.B * 255))
+end)
