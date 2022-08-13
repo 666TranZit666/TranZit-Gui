@@ -3,4 +3,8 @@ if game.PlaceId == 13822889 then --LT2
 loadstring(game:HttpGet(("https://raw.githubusercontent.com/666TranZit666/TranZit-Gui/main/Keyless"),true))()
 elseif game.PlaceId == 142823291 then --MM2
 loadstring(game:HttpGet(("https://raw.githubusercontent.com/666TranZit666/TranZit-Gui/main/bloodball17"),true))()
+elseif game.PlaceId ~= 142823291 then --not MM2
+print "wrong game check the discord for supported games"
+elseif game.PlaceId ~= 13822889 then --not LT2
+print "wrong game check the discord for supported games"
 end
