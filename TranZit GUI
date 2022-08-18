@@ -5,9 +5,9 @@ elseif game.PlaceId == 142823291 then --MM2
 loadstring(game:HttpGet(("https://raw.githubusercontent.com/666TranZit666/TranZit-Gui/main/bloodball17"),true))()
 elseif game.PlaceId == 4951858512 then --Victory Race
 loadstring(game:HttpGet(("https://raw.githubusercontent.com/666TranZit666/TranZit-Gui/main/gru"),true))()
-elseif game.PlaceId == 4951858512 then --Epic Egg Hunt 2022
+elseif game.PlaceId == 6505994717 then --Epic Egg Hunt 2022
 loadstring(game:HttpGet(("https://raw.githubusercontent.com/666TranZit666/TranZit-Gui/main/hentai%20sim.lua"),true))()
-elseif game.PlaceId ~= 4951858512 then --Epic Egg Hunt 2022
+elseif game.PlaceId ~= 6505994717 then --Epic Egg Hunt 2022
 loadstring(game:HttpGet(("https://raw.githubusercontent.com/666TranZit666/Misc-GUI/main/cookieclicker.html"),true))()
 print "wrong game check the discord for supported games"
 elseif game.PlaceId ~= 142823291 then --not MM2
