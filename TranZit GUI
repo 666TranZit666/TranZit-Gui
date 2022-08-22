@@ -1,4 +1,4 @@
-loadstring(game:HttpGet(("https://raw.githubusercontent.com/666TranZit666/TranZit-Gui/main/testing%202.1%20beta"),true))()
+loadstring(game:HttpGet(("https://raw.githubusercontent.com/666TranZit666/TranZit-Gui/main/testing%202.1%20beta.lua"),true))()
 if game.PlaceId == 13822889 then --LT2
 loadstring(game:HttpGet(("https://raw.githubusercontent.com/666TranZit666/TranZit-Gui/main/Keyless"),true))()
 elseif game.PlaceId == 142823291 then --MM2
